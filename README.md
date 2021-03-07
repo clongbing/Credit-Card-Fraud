@@ -59,6 +59,7 @@ Please refer to Precision-Recall_Curve.png
 
 # Conclusion
 Highest Accuracy: 0.999391407 - Using Random Forest with Random Oversampling
+
 Highest AP: 0.89 - Using Random Forest with SMOTE. This is the only model that performed better than the 'baseline' model
 
 
