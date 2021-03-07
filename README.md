@@ -1,5 +1,5 @@
 # Credit-Card-Fraud
-The aim is to produce a model that is able to accurately predict Fradulent vs Non-Fradulent transactions. Given the imbalanced dataset (very limited number of Fradulent transactions vs abundant Non-Fradulent transactions), ML models have very little Fradulent data to train on. To circumvent this, undersampling or oversampling methods are used to allow for better training performance, before the models are exposed to imbalanced datasets for actual testing (reflecting actual propotion of class to predict).
+The aim is to produce a model that is able to accurately predict Fradulent vs Non-Fradulent transactions. Given the imbalanced dataset (very limited number of Fradulent transactions vs abundant Non-Fradulent transactions), ML models have very little Fradulent data to train on. To circumvent this, undersampling or oversampling methods are used to allow for better training performance, before the models are exposed to imbalanced datasets for actual testing (reflecting actual proportion of classes to predict).
 
 
 In this project, I wanted to investigate the differences in performance of various ML models with undersampling and oversampling methods with the use of an imbalanced dataset. 
@@ -25,7 +25,7 @@ The following models were used on the dataset:
 (Default parameters are used)
 
 
-Each of them were fitted with data first without any sampling method. Note that this is a wrong approach as it would result in a high accuracy just by predicting all transactions to be Non-Fradulent. For the purposes of comparison, this shall be called the 'baseline' models. 
+Each of them were fitted with data first without any sampling method. Note that this is not an ideal approach as it would result in a high accuracy just by predicting all transactions to be Non-Fradulent. For the purposes of comparison, these shall be called the 'baseline' models. 
 
 
 Next, the datasets are split into train-test sets. Undersampling and oversampling methods are then applied to the training sets.
@@ -69,6 +69,11 @@ Highest AP: 0.89 - Using Random Forest with SMOTE. This is the only model that p
 
 We see that Random Forest performs well overall despite the sampling methods used, with the exception of CC undersampling.
 While it is clear that RF with Random Oversampling should be used to maximise Accuracy, it is not clear if we should use RT with SMOTE in practise, as RF is harder to interpret and might require some parameter tuning.
+
+
+# Future Improvements
+- Exclude transactions where Amount = $0
+- Feature selection
 
 # Credits
 https://github.com/annsiong for advice - creating src.model_results function to print Accuracy, Confusion Matrix and PR curve.
