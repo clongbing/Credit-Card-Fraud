@@ -2,7 +2,7 @@
 The aim is to produce a model that is able to accurately predict Fradulent vs Non-Fradulent transactions. Given the imbalanced dataset (very limited number of Fradulent transactions vs abundant Non-Fradulent transactions), ML models have very little Fradulent data to train on. To circumvent this, undersampling or oversampling methods are used to allow for better training performance, before the models are exposed to imbalanced datasets for actual testing (reflecting actual propotion of class to predict).
 
 
-In this project, I wanted to investigate the differences in performance of a few ML models with undersampling and oversampling methods with the use of an imbalanced dataset. 
+In this project, I wanted to investigate the differences in performance of various ML models with undersampling and oversampling methods with the use of an imbalanced dataset. 
 
 
 Data used: Credit Card Fraud Detection Dataset from Kaggle - Anonymized credit card transactions labeled as fraudulent or genuine (https://www.kaggle.com/mlg-ulb/creditcardfraud)
@@ -60,6 +60,7 @@ Please refer to Precision-Recall_Curve.png
 # Conclusion
 Highest Accuracy: 0.999391407 - Using Random Forest with Random Oversampling
 Highest AP: 0.89 - Using Random Forest with SMOTE. This is the only model that performed better than the 'baseline' model
+
 
 We see that Random Forest performs well overall despite the sampling methods used, with the exception of CC undersampling.
 While it is clear that RF with Random Oversampling should be used to maximise Accuracy, it is not clear if we should use RT with SMOTE in practise, as RF is harder to interpret and might require some parameter tuning.
