@@ -46,14 +46,17 @@ Methods of oversampling are also used, namely:
 The undersampled/oversampled training data is then passed into the above mentioned models, and subsequently scored against testing data - which remains imbalanced.
 It is to be expected that the unsampled 'baseline' model will give a high accuracy score. A better reflection of actual accuracy scores/confusion matrix/precision-recall would be of those models trained with undersampled or oversampled training datasets. The testing data should remain imbalanced as there should not be any information leakage into the testing data.
 
-# Accuracy Score
+
+
+# Results
+### Accuracy Score
 ![image](https://user-images.githubusercontent.com/75196868/110236284-e67d4980-7f6f-11eb-806d-d71bb02e7f17.png)
 
-# Confusion Matrix
+### Confusion Matrix
 Please refer to Confusion_Matrix.png
 ![image](https://user-images.githubusercontent.com/75196868/110236576-796ab380-7f71-11eb-8dbf-5ff4f96577b6.png)
 
-# Precison-Recall Curve
+### Precison-Recall Curve
 Please refer to Precision-Recall_Curve.png
 ![image](https://user-images.githubusercontent.com/75196868/110239140-7b883e80-7f80-11eb-8a87-d53181780c80.png)
 
