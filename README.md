@@ -71,7 +71,7 @@ We see that Random Forest performs well overall despite the sampling methods use
 While it is clear that RF with Random Oversampling should be used to maximise Accuracy, it is not clear if we should use RT with SMOTE in practise, as RF is harder to interpret and might require some parameter tuning.
 
 
-Furthermore, business input is required in choosing the probability threshold along the precision recall curve. For instance, a reputable bank that aims to protect its customer's interests at the expense of higher operational costs would choose a probability threshold that would maximise recall. In this case, the number of False Negative cases (predicted Non-Fradulent but is actually Fradulent) would be minised at the expense of higher operational cost - employees might need more man hours to sieve through more False Posivite cases
+Furthermore, business input is required in choosing the probability threshold along the precision recall curve. For instance, a reputable bank that aims to protect its customer's interests at the expense of higher operational costs would choose a probability threshold that would maximise recall. In this case, the number of False Negative cases (predicted Non-Fradulent but is actually Fradulent) would be minised at the expense of higher operational cost - employees might need more man hours to sieve through more False Positive cases
 
 # Future Improvements
 - Exclude transactions where Amount = $0
