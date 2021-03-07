@@ -38,13 +38,7 @@ The undersampled/oversampled training data is then passed into the above mention
 It is to be expected that the unsampled 'baseline' model will give a high accuracy score. A better reflection of actual accuracy scores/confusion matrix/precision-recall would be of those models trained with undersampled or oversampled training datasets. The testing data should remain imbalanced as there should not be any information leakage into the testing data.
 
 # Accuracy Score
-Accuracy score			Sampling Method					
-			Undersampling			Oversampling		
-		Baseline (no sampling)	Random	Cluster Centroids	Near Miss	Random	SMOTE	ADASYN
-Model	Logistic Regression	0.999145629	0.950668867	0.853949417	0.960090353	0.973409173	0.979729176	0.965930503
-	Random Forest	0.999461629	0.971513173	0.696160013	0.940954789	0.999391407	0.998747703	0.99854874
-	SVM	0.999449926	0.977318212	0.993890664	0.998700888	0.998221036	0.984796882	0.977540583
-![image](https://user-images.githubusercontent.com/75196868/110236258-c2ba0380-7f6f-11eb-9031-49f31324e0fd.png)
-
+![image](https://user-images.githubusercontent.com/75196868/110236284-e67d4980-7f6f-11eb-806d-d71bb02e7f17.png)
 
 # Confusion Matrix
+![image](https://user-images.githubusercontent.com/75196868/110236304-0280eb00-7f70-11eb-9682-ba552e37116c.png)
