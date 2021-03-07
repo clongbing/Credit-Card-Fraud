@@ -50,6 +50,7 @@ It is to be expected that the unsampled 'baseline' model will give a high accura
 
 # Results
 ### Accuracy Score
+Please refer to Accuracy.csv
 ![image](https://user-images.githubusercontent.com/75196868/110236284-e67d4980-7f6f-11eb-806d-d71bb02e7f17.png)
 
 ### Confusion Matrix
