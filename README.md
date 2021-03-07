@@ -18,6 +18,7 @@ The following models were used on the dataset:
 1. Logistic Regression
 2. Random Forest
 3. Support Vector Classifier
+
 (Default parameters are used)
 
 Each of them were fitted with data first without any sampling method. Note that this is a wrong approach as it would result in a high accuracy just by predicting all transactions to be Non-Fradulent. For the purposes of comparison, this shall be called the 'baseline' models. 
@@ -25,14 +26,14 @@ Each of them were fitted with data first without any sampling method. Note that 
 Next, the datasets are split into train-test sets. Undersampling and oversampling methods are then applied to the training sets.
 
 Methods of undersampling are used, namely:
-A. Random undersampling
-B. Cluster Centroids undersampling
-C. Near Miss undersampling
+- Random undersampling
+- Cluster Centroids undersampling
+- Near Miss undersampling
 
 Methods of oversampling are also used, namely:
-D. Random oversampling
-E. SMOTE
-F. ADASYN
+- Random oversampling
+- SMOTE
+- ADASYN
 
 The undersampled/oversampled training data is then passed into the above mentioned models, and subsequently scored against testing data - which remains imbalanced.
 It is to be expected that the unsampled 'baseline' model will give a high accuracy score. A better reflection of actual accuracy scores/confusion matrix/precision-recall would be of those models trained with undersampled or oversampled training datasets. The testing data should remain imbalanced as there should not be any information leakage into the testing data.
@@ -41,4 +42,11 @@ It is to be expected that the unsampled 'baseline' model will give a high accura
 ![image](https://user-images.githubusercontent.com/75196868/110236284-e67d4980-7f6f-11eb-806d-d71bb02e7f17.png)
 
 # Confusion Matrix
-![image](https://user-images.githubusercontent.com/75196868/110236304-0280eb00-7f70-11eb-9682-ba552e37116c.png)
+Please refer to Confusion_Matrix.png
+![image](https://user-images.githubusercontent.com/75196868/110236576-796ab380-7f71-11eb-8dbf-5ff4f96577b6.png)
+
+# Precison-Recall Curve
+Please refer to Precision-Recall_Curve.png
+![image](https://user-images.githubusercontent.com/75196868/110239140-7b883e80-7f80-11eb-8a87-d53181780c80.png)
+
+# Results
