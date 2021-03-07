@@ -57,4 +57,14 @@ Please refer to Confusion_Matrix.png
 Please refer to Precision-Recall_Curve.png
 ![image](https://user-images.githubusercontent.com/75196868/110239140-7b883e80-7f80-11eb-8a87-d53181780c80.png)
 
-# Results
+# Conclusion
+Highest Accuracy: 0.999391407 - Using Random Forest with Random Oversampling
+Highest AP: 0.89 - Using Random Forest with SMOTE. This is the only model that performed better than the 'baseline' model
+
+We see that Random Forest performs well overall despite the sampling methods used, with the exception of CC undersampling.
+While it is clear that RF with Random Oversampling should be used to maximise Accuracy, it is not clear if we should use RT with SMOTE in practise, as RF is harder to interpret and might require some parameter tuning.
+
+# Credits
+https://github.com/annsiong for advice - creating src.model_results function to print Accuracy, Confusion Matrix and PR curve.
+
+
