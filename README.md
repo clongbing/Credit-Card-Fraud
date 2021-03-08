@@ -76,6 +76,7 @@ Furthermore, business input is required in choosing the probability threshold al
 # Future Improvements
 - Exclude transactions where Amount = $0
 - Feature selection
+- Regularization on undersampled data (Ridge Regression)
 
 # Credits
 https://github.com/annsiong for advice - creating src.model_results function to print Accuracy, Confusion Matrix and PR curve.
